@@ -122,3 +122,164 @@ header h1 {
         align-items: center;
     }
 }
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* TABLET */
+@media screen and (max-width: 992px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-right {
+        margin-top: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .card-container,
+    .paket-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    footer video {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .nav-right {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding: 70px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .card-container,
+    .paket-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card img,
+    .paket-card img {
+        height: auto;
+    }
+
+    .promo ul {
+        padding-left: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer video {
+        width: 100%;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+
+/* MOBILE KECIL */
+@media screen and (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .btn,
+    .login,
+    .btn-primary {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .card,
+    .paket-card {
+        padding: 15px;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
